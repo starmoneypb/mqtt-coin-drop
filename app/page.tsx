@@ -27,7 +27,7 @@ export default function Page() {
   const clientRef = useRef<any | null>(null);
   const [loadingAmount, setLoadingAmount] = useState<number | null>(null);
   const [cooldown, setCooldown] = useState<number>(0);
-  const cooldownTimerRef = useRef<NodeJS.Timer | null>(null);
+  const cooldownTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     // Generate a reasonably unique client id
